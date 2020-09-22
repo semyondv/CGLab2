@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="733*"/>
+        </Grid.ColumnDefinitions>
+        <Image Name="picture1" HorizontalAlignment="Left" Height="238" Margin="42,38,0,0" VerticalAlignment="Top" Width="215" Loaded="picture1_Loaded" Grid.ColumnSpan="2" />
+        <Image Name="picture2" HorizontalAlignment="Left" Height="238" Margin="225.031,38,0,0" VerticalAlignment="Top" Width="228" Grid.Column="1"/>
+        <Button Content="Выделить канал" HorizontalAlignment="Left" Margin="276.031,362,0,0" VerticalAlignment="Top" Width="99" Height="33" Click="Button_Click" Grid.Column="1"/>
+        <Button Content="Построить гистограмму" HorizontalAlignment="Left" Height="33" Margin="533.031,362,0,0" VerticalAlignment="Top" Width="147" Click="Button_Click_1" Grid.Column="1"/>
+        <Image Name="picture3" HorizontalAlignment="Left" Height="106" Margin="533.031,10,0,0" VerticalAlignment="Top" Width="151" Grid.Column="1"/>
+        <ComboBox Name="colorlist"  HorizontalAlignment="Left" Height="27" Margin="22.031,333,0,0" VerticalAlignment="Top" Width="127" Grid.Column="1">
+            <TextBlock>Red</TextBlock>
+            <TextBlock>Green</TextBlock>
+            <TextBlock>Blue</TextBlock>
+        </ComboBox>
+        <Image Name="picture4" HorizontalAlignment="Left" Height="99" Margin="533.031,121,0,0" VerticalAlignment="Top" Width="151" Grid.Column="1"/>
+        <Image Name="picture5" HorizontalAlignment="Left" Height="95" Margin="533.031,238,0,0" VerticalAlignment="Top" Width="151" Grid.Column="1"/>
+        <Label Content="Выбор канала:" HorizontalAlignment="Left" Height="27" Margin="22.031,306,0,0" VerticalAlignment="Top" Width="108" Grid.Column="1"/>
+
+    </Grid>
+</Window>
